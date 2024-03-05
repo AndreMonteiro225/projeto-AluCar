@@ -1,0 +1,194 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.limitar-secao {
+    max-width: 1024px;
+}
+
+
+/* cabeçalho */
+header h3{
+    display: flex;
+    margin-left: 25vw;
+    font-size: 25px;
+    height: 8vh;;
+    align-items: center;
+}
+/* fim cabeçalho */
+
+/* banner */
+.tarja-banner {
+    background-color: black;
+    z-index: 1;
+    height: 15vh;
+    opacity: 60%;
+    position: relative;
+    padding: 5vh 0 ;
+}
+
+.tarja-banner::before {
+    content: "";
+    color: white;
+    font-size: 30px;
+    position: absolute;
+}
+
+.img-fundo h2 {
+    color: white;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    position: relative;
+    top:10vh;
+    right: 15vw;
+    z-index: 2;
+}
+
+.img-fundo {
+    background-image: url("img/capa.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 40vh;
+}
+
+/* fim banner */
+
+/* sobre nós */
+
+.secao-sobre {
+    margin: 30px auto 30px auto;
+    text-align: center;
+}
+
+.box-cards {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.box-cards img {
+    box-shadow: 1px 3px 10px black;
+}
+
+.legenda-cards p {
+    text-align: justify;
+    border-left: 3px black solid;
+    margin: 10px 0 0 60px;
+    padding-left: 5px;
+}
+/* fim sobre nós */
+
+/* CONTATO */
+
+.contato{
+    background-color: red;
+    height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contato::before{
+    content: "Contato";
+    text-align: center;
+    background-color: brown;
+    font-size: 30px;
+    width: 100%;
+    padding: 15px;
+    color: white;
+    font-weight: bold;
+}
+
+/* FIM CONTATO */
+
+/* FORMULARIO */
+
+main {
+    display: flex;
+    flex-direction: column;
+}
+
+.subtitulo-form {
+    display: flex;
+    text-align: left;
+    margin: 5vh auto 5vh 20vw;
+    flex-direction: column;
+    font-size: 18px;
+}
+
+.subtitulo-form h2 {
+    margin-bottom: 3vh;
+    font-size: 32px;
+}
+
+.form {
+    box-sizing: border-box;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.formulario {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+
+.form fieldset {
+    margin: 2.5vh 0 2.5vh 0;
+    line-height: 2.5vh;
+}
+
+.form input {
+    height: 4vh;
+}
+
+.botao-enviar {
+    text-align: center;
+}
+
+.botao-enviar button {
+    width: 7vw;
+    height: 5vh;
+    font-weight: bold;
+    font-size: 16px;
+    background-color: red;
+    border-radius: 20px;
+}
+
+/* FIM FORMULARIO */
+
+/* RODAPE */
+
+footer {
+    margin: 5vh auto;
+    text-align: center;
+    color: red;
+}
+
+/* FIM RODAPE */
+
+
+@media (min-width: 320px) and (max-width:767px) {
+    .legenda-cards {margin: 50px 40px 0 0;}
+    .secao-sobre p {margin-bottom: 20px;}
+    .box-cards {display: flex; flex-flow: row wrap; gap:5px;}
+    .box-cards img{width: 100%;}
+    main form {margin-right: 50px;}
+    .botao-enviar button {padding: 10px 60px; display:flex; align-items: center; justify-content: center; margin: 0 auto;}
+}
+@media (min-width: 768px) and (max-width:1023px) {
+    .secao-sobre p {margin-bottom: 20px;}
+    .legenda-cards {margin: 50px 40px 0 0;}
+    .botao-enviar button {padding: 10px 40px; display:flex; align-items: center; justify-content: center; margin: 0 auto;}
+
+  }
+
+@media (min-width: 1024px) {
+    .secao-sobre p {margin-bottom: 20px;}
+    .legenda-cards {margin: 50px 40px 0 0;}
+  }
