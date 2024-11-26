@@ -83,7 +83,7 @@ header h3{
 /* CONTATO */
 
 .contato{
-    background-color: red;
+    background-color: brown;
     height: 20vh;
     display: flex;
     justify-content: center;
@@ -93,11 +93,11 @@ header h3{
 .contato::before{
     content: "Contato";
     text-align: center;
-    background-color: brown;
+    background-color: black;
     font-size: 30px;
     width: 100%;
     padding: 15px;
-    color: white;
+    color: gold;
     font-weight: bold;
 }
 
